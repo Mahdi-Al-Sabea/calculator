@@ -1,123 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scrollbar-width: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: 10px;
 }
 
-
-body{
-
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
-
-
-
-.container{
-    background-color:gray;
-    border-radius: 10px;
-   height: 400px;
-   width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
- 
-}
-
-.screen{
-background-color: rgb(176, 167, 167);
-height: 50px;
-width: 270px;
-margin: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: larger;
-overflow: scroll;
-
-}
-
-button{
-    height: 50px;
-    width: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-
-.remove{
-    position: relative;
-    right: 54px;
-  
-
-}
-
-.remove button{
-    background-color: rgb(194, 95, 95);
-}
-
-
 
 ::-webkit-scrollbar {
-    width: 0px;  /* Width of the scrollbar */
-    height: 3px; /* Height of the scrollbar */
-  }
-  
-  /* For the track */
-  ::-webkit-scrollbar-track {
-    background: rgb(99, 98, 98); /* Background color of the track */
-  }
-  
-  /* For the thumb */
-  ::-webkit-scrollbar-thumb {
-    background: #2c2a2a; /* Color of the thumb */
-  }
-  
-  /* On hover, the thumb */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #151414; /* Color of the thumb on hover */
-  }
-
-
-  /*
-  it was bettter to use grid and replace all the all buttons by divs
-  
-  .container{
-width: 300px;
-height: 300px;
-background-color: gray;
-display: grid;
-grid-template-rows: repeat(6,1fr);
-grid-template-columns: repeat(4,1fr);
-grid-gap: 10px;
-padding: 20px;
-
-
-
+  width: 0px; /* Width of the scrollbar */
+  height: 3px; /* Height of the scrollbar */
 }
 
-
-.screen{
-grid-row: 1/2;
-grid-column: 1/5;
-
+/* For the track */
+::-webkit-scrollbar-track {
+  background: rgb(99, 98, 98); /* Background color of the track */
 }
 
-
-.container div{
-background-color: aqua;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 10px;
+/* For the thumb */
+::-webkit-scrollbar-thumb {
+  background: #2c2a2a; /* Color of the thumb */
 }
-  
-  
-  
-  
-  
-  */
+
+/* On hover, the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #151414; /* Color of the thumb on hover */
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.screen {
+  grid-row: 1/2;
+  grid-column: 1/5;
+
+  background-color: gray;
+  border-radius: 5px;
+
+  font-size: larger;
+  overflow: scroll;
+}
+
+.container div {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
